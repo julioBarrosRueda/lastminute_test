@@ -1,0 +1,19 @@
+[
+  {
+    "productName": "book",
+    "productType": "BOOK",
+    "productPrice": 12.49,
+    "productUnits": 1
+  },
+  {
+    "productName": "music CD",
+    "productPrice": 14.99,
+    "productUnits": 1
+  },
+  {
+    "productName": "chocolate bar",
+    "productType": "FOOD",
+    "productPrice": 0.85,
+    "productUnits": 1
+  }
+]

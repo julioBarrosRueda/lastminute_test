@@ -1,0 +1,65 @@
+openapi: 3.0.3
+info:  
+  title: Lastminute exercise -> BKN
+  description: This API provides Lastminute exercise core.
+  version: 1.0.0
+tags:
+  - name: Self-Service
+    description: API calls for self-service
+paths:
+  /sale:
+    summary: Add one product
+    post:
+      operationId: addProduct
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/ProductDTO'
+      responses:
+        '202':
+          description: Successfully sale
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SaleResponseDTO'
+      tags: 
+       - Self-Service
+components:
+  schemas:
+    ProductDTO:
+      properties:
+        productName:
+          type: string
+        productType:
+          $ref: '#/components/schemas/productType'
+        productPrice:
+          type: number
+          format: double
+        productUnits:
+          type: number
+    SaleResponseDTO:
+      properties:
+         saleTaxes:
+          type: number
+          format: double
+         saleTotal:
+          type: number
+          format: double
+         saleProducts:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductDTO'
+    productType:
+      type: string
+      enum: 
+        - BOOK
+        - MEDICAL
+        - FOOD
+        - DUTY
+        - GENERIC
+        
+        

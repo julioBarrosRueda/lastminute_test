@@ -1,0 +1,13 @@
+[
+    {
+    "productName": "imported box of chocolates",
+    "productType": "FOOD",
+    "productPrice": 10.00,
+    "productUnits": 1
+  },
+  {
+    "productName": " imported bottle of perfume",
+    "productPrice": 47.50,
+    "productUnits": 1
+  }
+]

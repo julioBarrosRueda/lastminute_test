@@ -1,0 +1,24 @@
+[
+  {
+    "productName": "imported bottle of perfume",
+    "productPrice": 27.99,
+    "productUnits": 1
+  },
+  {
+    "productName": "bottle of perfume",
+    "productPrice": 18.99,
+    "productUnits": 1
+  },
+  {
+    "productName": "packet of headache pills",
+    "productType": "MEDICAL",
+    "productPrice": 9.75,
+    "productUnits": 1
+  },
+  {
+    "productName": "box of imported chocolates",
+    "productType": "FOOD",
+    "productPrice": 11.25,
+    "productUnits": 1
+  }
+]
